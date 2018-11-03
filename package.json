@@ -1,0 +1,29 @@
+{
+  "name": "pixel-dungeon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arktosk/pixel-dungeon.git"
+  },
+  "author": "Arkadiusz S. Krauzowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arktosk/pixel-dungeon/issues"
+  },
+  "homepage": "https://github.com/arktosk/pixel-dungeon#readme",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
