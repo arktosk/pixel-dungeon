@@ -1,3 +1,5 @@
+import Level from './Logic/Level/Level';
+
 /**
  * Game instance
  * @author Arkadiusz S. Krauzowicz
@@ -14,12 +16,21 @@ class Game {
   start() {
     /**
      * Set canvas properties and style.
-     * Then render canvas.
      */
     this.canvas.width = 800;
-    this.canvas.height = 480;
+    this.canvas.height = 800;
     this.canvas.style.border = '1px solid';
+
+    /**
+     * Save context.
+     */
     this.context = this.canvas.getContext("2d");
+
+    let level = new Level;
+
+    // console.log( level.createDungeon() )
+
+    level.render( this.context );
   }
 }
 
